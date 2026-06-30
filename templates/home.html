@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}">
+</head>
+<body>
+
+<div class="hero">
+
+  <div class="card text-center">
+
+    <div class="card-body">
+
+    <h1 class="display-4">Food Demand Forecasting</h1>
+    <p class="lead">Predict future food demand using Machine Learning to minimize food waste and improve inventory planning.</p><hr>
+    <p>This application uses an <strong>XGBoost Regression Model </strong> trained on historical cafeteria sales data to estimate thee xpected number of food orders based on pricing, promotions,meal category and fulfillment center information.</p>
+    <div class="buttons">
+      <a href="{{ url_for('prediction') }}"class="btn btn-success btn-lg"> Predict Demand</a>
+      <a href="{{ url_for('insight') }}"class="btn btn-outline-primary btn-lg"> View Insights</a>
+    </div>
+  </div>
+</div>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}">
+</head>
+
+<body>
+
+
+<div class="container">
+
+
+    <section class="card">
+        <h2>Dataset Overview</h2>
+        <ul>
+            <li><strong>Total Records:</strong> 456,548</li>
+            <li><strong>Unique Fulfillment Centers:</strong> 77</li>
+            <li><strong>Unique Meal Types:</strong> 51</li>
+            <li><strong>Prediction Target:</strong> Number of Food Orders</li>
+        </ul>
+
+        <p>This dataset contains historical food demand information collected across multiple fulfillment centers. The objective is to predict the number of food orders using pricing, promotions and meal information.</p>
+
+    </section>
+
+    <section class="card">
+        <h2>Effect of Discounts on Demand</h2>
+        <img src="{{ url_for('static', filename='images/discount_orders.png') }}"
+             alt="Discount vs Orders">
+        <p>The analysis shows that promotional discounts generally increase food demand. Lower checkout prices tend to generate more customer orders, although demand also depends on the meal category and fulfillment center.</p>
+    </section>
+
+    <section class="card">
+
+        <h2>Weekly Demand Trend</h2>
+        <img src="{{ url_for('static', filename='images/weekly_trend.png') }}"
+             alt="Weekly Demand">
+
+        <p>Customer demand changes throughout the weeks rather than remaining constant. This indicates that demand forecasting requires historical patterns instead of relying solely on price.</p>
+    </section>
+
+
+    <section class="card">
+
+        <h2>Correlation Heatmap</h2>
+
+        <img src="{{ url_for('static', filename='images/heatmap.png') }}"
+             alt="Correlation Heatmap">
+        <p>The heatmap illustrates relationships between numerical variables.Pricing variables exhibit strong relationships while promotional variables contribute additional predictive information.</p>
+    </section>
+
+
+    <section class="card">
+
+        <h2>Feature Importance</h2>
+
+        <img src="{{ url_for('static', filename='images/feature_importance.png') }}"
+             alt="Feature Importance">
+
+        <p>The trained XGBoost model identifies pricing, promotional discounts,fulfillment center and meal category as the most influential features for predicting food demand.</p>
+    </section>
+
+
+    <section class="card">
+        <h2>Model Performance</h2>
+        <table>
+
+            <tr>
+                <td>Model</td>
+                <td>XGBoost Regressor</td>
+            </tr>
+
+            <tr>
+                <td>Problem Type</td>
+                <td>Regression</td>
+            </tr>
+
+            <tr>
+                <td>Target Variable</td>
+                <td>Number of Orders</td>
+            </tr>
+
+            <tr>
+                <td>Evaluation Metric</td>
+                <td>R² Score</td>
+            </tr>
+
+            <tr>
+                <td>Model Accuracy (R²)</td>
+                <td>0.84</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+
+    <!-- Key Findings -->
+
+    <section class="card">
+
+        <h2>Key Findings</h2>
+
+        <ul>
+
+            <li>Promotional discounts generally increase customer demand.</li>
+
+            <li>Meal category significantly affects the number of expected orders.</li>
+
+            <li>Different fulfillment centers exhibit different ordering patterns.</li>
+
+            <li>Pricing variables contribute strongly to demand prediction.</li>
+
+            <li>Combining pricing, promotions and historical information enables accurate forecasting.</li>
+
+        </ul>
+
+    </section>
+
+
+    <!-- Future Work -->
+
+    <section class="card">
+
+        <h2>Future Improvements</h2>
+
+        <ul>
+
+            <li>Integrate real-time sales information.</li>
+
+            <li>Include weather and seasonal effects.</li>
+
+            <li>Incorporate holiday and festival demand.</li>
+
+            <li>Deploy the application on Render for public access.</li>
+
+            <li>Extend the system for inventory optimization.</li>
+
+        </ul>
+
+    </section>
+
+</div>
+
+</body>
+</html>
