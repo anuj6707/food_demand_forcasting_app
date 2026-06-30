@@ -3,7 +3,7 @@ import pandas as pd
 import pickle
 
 app=Flask(__name__)
-filename=r"C:\Users\anujd\OneDrive\Desktop\food_demand_forcasting_app\model.pkl"
+filename="model.pkl"
 with open(filename, "rb") as f:
    predmodel = pickle.load(f)
 
