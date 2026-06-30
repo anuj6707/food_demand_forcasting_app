@@ -4,8 +4,8 @@ import pickle
 
 app=Flask(__name__)
 filename=r"C:\Users\anujd\OneDrive\Desktop\food_demand_forcasting_app\model.pkl"
-      with open(filename, "rb") as f:
-        predmodel = pickle.load(f)
+with open(filename, "rb") as f:
+   predmodel = pickle.load(f)
 
 @app.route('/',methods=["GET",'POST'])
 def home():
