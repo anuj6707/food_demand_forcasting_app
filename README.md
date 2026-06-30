@@ -17,7 +17,7 @@ The application is built using **Flask**, **XGBoost**, and **Python**, allowing 
 
 ---
 
-## 📸 Application Preview
+##  Application Preview
 
 ### Home Page
 
@@ -41,7 +41,7 @@ The application is built using **Flask**, **XGBoost**, and **Python**, allowing 
 ---
 
 
-## 🧠 Machine Learning Model
+##  Machine Learning Model
 
 Model Used:
 
@@ -55,7 +55,7 @@ The model was trained using engineered features and historical pricing and promo
 
 ---
 
-## 📈 Exploratory Data Analysis
+##  Exploratory Data Analysis
 
 The application also includes an Insights section showing:
 
@@ -69,7 +69,7 @@ These visualizations help explain the data and provide business insights beyond 
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 ### Programming
 
@@ -105,7 +105,7 @@ These visualizations help explain the data and provide business insights beyond 
 
 ---
 
-## 📚 Key Learning Outcomes
+##  Key Learning Outcomes
 
 This project demonstrates:
 
