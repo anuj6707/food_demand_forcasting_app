@@ -1,19 +1,29 @@
 # Food Demand Forecasting Web Application
 
-A Machine Learning-powered web application that predicts food demand based on historical ordering patterns, pricing, promotions, meal category, and fulfillment center information.
+A complete end-to-end Machine Learning web application that predicts future food demand using historical ordering patterns, pricing, promotional campaigns, and fulfillment center information.
 
-The application is built using **Flask**, **XGBoost**, and **Python**, allowing users to interact with a trained machine learning model through a clean web interface.
+The project demonstrates the complete ML lifecycle—from data preprocessing and feature engineering to model deployment through a Flask web application.
 
 ---
 
-## Features
+## Live Demo
 
-- Predicts food demand using an XGBoost Regression model
-- Interactive Flask web application
-- User-friendly prediction form
-- Exploratory Data Analysis (EDA) insights page
-- Correlation heatmap and demand trend visualizations
-- Responsive interface built with HTML & CSS
+**https://food-demand-forcasting.onrender.com**
+
+---
+
+# Features
+
+- Predict food demand using a trained XGBoost Regression model
+- Interactive web interface built with Flask
+- User input validation
+- Exception handling for invalid requests
+- Clean and responsive HTML/CSS frontend
+- Exploratory Data Analysis (EDA) page
+- Correlation Heatmap
+- Weekly Demand Trend visualization
+- Discount vs Orders analysis
+- Fully deployed on Render
 
 ---
 
@@ -93,6 +103,13 @@ These visualizations help explain the data and provide business insights beyond 
 - Matplotlib
 - Seaborn
 
+## Deployment
+
+- Git
+- GitHub
+- Render
+
+---
 ---
 
 ## 💡 Future Improvements
