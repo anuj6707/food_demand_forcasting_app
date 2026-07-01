@@ -9,7 +9,6 @@ with open(filename, "rb") as f:
 
 @app.route('/',methods=["GET",'POST'])
 def home():
-    if request.method=="GET":
       return render_template("home.html")
 
 @app.route('/prediction',methods=["GET",'POST'])
