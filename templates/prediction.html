@@ -83,13 +83,14 @@
           <h1>{{ prediction }} Orders</h1>
           <p>Estimated number of food orders based on theprovided inputs.</p>
         </div>
+                    {% if error %}
+
+                    <div class="error-box">{{ error }}</div>
+
+                    {% endif %}
 
         {% endif %}
-        {% if error %}
 
-        <div class="error-box">{{ error }}</div>
-
-        {% endif %}
 
     </div>
 
